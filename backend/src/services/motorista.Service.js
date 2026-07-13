@@ -18,7 +18,14 @@ class MotoristaService {
         return motor;
     }
     async createMotor() {
-
+        const newMotor = {
+            id: motorista.length + 1,
+            nome: "Novo Motorista",
+            idade: 0,
+            cnh: "000000000"
+        }
+        motorista.push(newMotor);
+        return newMotor;  
     }
 }
 
