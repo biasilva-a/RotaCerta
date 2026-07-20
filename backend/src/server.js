@@ -8,6 +8,6 @@ app.use(express.json())
 app.use("/motorista", motoristaRoutes)
 
 app.listen(PORT, () => {
-    console.log(`O servidor está rodando em http://localhost:${PORT}`);
+    console.log(`O servidor está rodando em http://localhost:${PORT}/motorista`);
 })
 
